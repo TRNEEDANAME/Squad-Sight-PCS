@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>e60609ac-7de0-4642-b973-84263fdee6e7</Guid>
+    <Name>SquadSightPCS</Name>
+    <Description>Description of My XCOM 2 Mod.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>SquadSightPCS</AssemblyName>
+    <RootNamespace>SquadSightPCS</RootNamespace>
+    <ProjectGuid>{7c8595e1-b92f-4382-81ec-7c655f7cd786}</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionRoot>$(MSBuildProjectDirectory)\..\</SolutionRoot>
+    <ScriptsDir>$(SolutionRoot).scripts\\</ScriptsDir>
+    <BuildCommonRoot>$(ScriptsDir)X2ModBuildCommon\</BuildCommonRoot>
+  </PropertyGroup>
+  <Import Project="$(BuildCommonRoot)XCOM2.targets" />
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Config\Base\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\SquadSightPCS\" />
+    <Folder Include="Src\SquadSightPCS\Classes\" />
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="ContentOptions.json" />
+    <Content Include="Config\Base\XComEditor.ini" />
+    <Content Include="Config\Base\XComEngine.ini" />
+    <Content Include="Config\Base\XComGame.ini" />
+    <Content Include="Config\XComTemplateCreator.ini" />
+    <Content Include="Config\XComTemplateEditor.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Localization\SquadSightPCS.int" />
+    <Content Include="Src\extra_globals.uci" />
+    <Content Include="Src\SquadSightPCS\Classes\X2DLCInfo_SquadSightPCS.uc" />
+    <Content Include="Src\SquadSightPCS\Classes\Help.uc" />
+    <Content Include="Src\SquadSightPCS\Classes\ConfigEngine.uc" />
+    <Content Include="ReadMe.md" />
+    <Content Include="Config\XComGameData.ini" />
+    <Content Include="Config\XComSquadSightPCS.ini" />
+    <Content Include="Config\Base\XComGameCore.ini" />
+    <Content Include="Src\SquadSightPCS\Classes\X2Ability_SquadSightPCS.uc" />
+    <Content Include="Src\SquadSightPCS\Classes\X2Effect_SquadSightPCS_RangeModifiers.uc" />
+    <Content Include="Src\SquadSightPCS\Classes\X2Item_SquadSightPCS.uc" />
+  </ItemGroup>
+</Project>
