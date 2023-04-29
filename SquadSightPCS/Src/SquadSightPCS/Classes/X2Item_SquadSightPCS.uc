@@ -29,12 +29,11 @@ static function X2DataTemplate CreatePCS_SquadSight(name TemplateName, int SellV
 	Template.Tier = Tier;
 
 	Template.StatBoostPowerLevel = Tier + 1;
-	Template.StatsToBoost.AddItem(eStat_Perception);
 
 	Template.bUseBoostIncrement = true;
 	Template.InventorySlot = eInvSlot_CombatSim;
 
-	if (Tier == "0")
+	if (Tier == 0)
 	{
 		Template.Abilities.AddItem('SquadSight_Buff_Bsc');
 
@@ -45,7 +44,7 @@ static function X2DataTemplate CreatePCS_SquadSight(name TemplateName, int SellV
 
 	}
 
-    else if (Tier == "1")
+    else if (Tier == 1)
 	{
 		Template.Abilities.AddItem('SquadSight_Buff_Adv');
 
@@ -55,7 +54,7 @@ static function X2DataTemplate CreatePCS_SquadSight(name TemplateName, int SellV
 		}
 	}
 
-        else if (Tier == "2")
+        else if (Tier == 2)
 	{
 		Template.Abilities.AddItem('SquadSight_Buff_Sup');
 				

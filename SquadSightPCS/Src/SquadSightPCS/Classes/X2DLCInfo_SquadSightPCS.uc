@@ -37,7 +37,7 @@ static function AddLootTables()
 	Type = name(InString);
 	switch(Type)
 	{
-		case 'TR_PCS_BSC_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.BasicSquadSightPCS_RangePenalityNegated));	return true; break;
+		case 'TR_PCS_BSC_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_RangePenalityNegated));	return true; break;
 		case 'TR_PCS_ADV_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_RangePenalityNegated));	return true; break;
 		case 'TR_PCS_SUP_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.SupSquadSightPCS_RangePenalityNegated));	return true; break;
 
