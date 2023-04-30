@@ -1,3 +1,9 @@
+//---------------------------------------------------------------------------------------
+//  FILE:    X2Item_SquadSightPCS.uc
+//  AUTHOR:  TRNEEDANAME  --  28/04/2023
+//  PURPOSE: Create the PCS items     
+//---------------------------------------------------------------------------------------
+
 class X2Item_SquadSightPCS extends X2Item config(SquadSightPCS);
 
 var config bool DoesBscPCSNerfMobility, DoesAdvPCSNerfMobility, DoesSupPCSNerfMobility;
@@ -20,9 +26,8 @@ static function X2DataTemplate CreatePCS_SquadSight(name TemplateName, int SellV
 	local X2EquipmentTemplate Template;
 
 	`CREATE_X2TEMPLATE(class'X2EquipmentTemplate', Template, TemplateName);
-
 	Template.LootStaticMesh = StaticMesh'UI_3D.Loot.AdventPCS';
-	Template.strImage = "img:///UILibrary_StrategyImages.X2InventoryIcons.Inv_CombatSim_Perception";
+	Template.strImage = "img:///UILibrary_SquadSightPCS.Inv_CombatSim_SquadSight";
 	Template.ItemCat = 'combatsim';
 	Template.TradingPostValue = SellValue;
 	Template.bAlwaysUnique = false;

@@ -1,3 +1,4 @@
+//---------------------------------------------------------------------------------------
 //  FILE:    Help.uc
 //  AUTHOR:  Iridar  --  20/04/2022
 //  PURPOSE: Helper class for static functions and script snippet repository.     

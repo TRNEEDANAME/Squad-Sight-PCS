@@ -1,3 +1,8 @@
+//---------------------------------------------------------------------------------------
+//  FILE:    X2Effect_SquadSightPCS_RangeModifiers.uc
+//  AUTHOR:  TRNEEDANAME  --  28/04/2023
+//  PURPOSE: Create the effect for the PCS. Copied from Proficiency Class     
+//---------------------------------------------------------------------------------------
 
 class X2Effect_SquadSightPCS_RangeModifiers extends X2Effect_Persistent;
 

@@ -1,3 +1,10 @@
+//---------------------------------------------------------------------------------------
+//  FILE:    X2Ability_SquadSightPCS.uc
+//  AUTHOR:  TRNEEDANAME  --  28/04/2023
+//  PURPOSE: Create the Ability tied to the PCS     
+//---------------------------------------------------------------------------------------
+
+
 class X2Ability_SquadSightPCS extends X2Ability config(SquadSightPCS);
 
 var config float			BscSquadSightPCS_RangePenalityNegated;
