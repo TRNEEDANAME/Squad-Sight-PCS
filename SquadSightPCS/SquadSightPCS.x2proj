@@ -19,17 +19,22 @@
     <Folder Include="Config\" />
     <Folder Include="Config\Base\" />
     <Folder Include="Localization\" />
+    <Folder Include="Content" />
+    <Folder Include="ContentForCook" />
     <Folder Include="Src\" />
     <Folder Include="Src\SquadSightPCS\" />
     <Folder Include="Src\SquadSightPCS\Classes\" />
-    <Content Include="ReadMe.txt" />
+    <Content Include="Config\XComRustyPCSIcons.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\UILibrary_SquadSightPCS.upk">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="ModPreview.jpg" />
     <Content Include="ContentOptions.json" />
     <Content Include="Config\Base\XComEditor.ini" />
     <Content Include="Config\Base\XComEngine.ini" />
     <Content Include="Config\Base\XComGame.ini" />
-    <Content Include="Config\XComTemplateCreator.ini" />
-    <Content Include="Config\XComTemplateEditor.ini" />
     <Content Include="Localization\XComGame.int" />
     <Content Include="Localization\SquadSightPCS.int" />
     <Content Include="Src\extra_globals.uci" />
