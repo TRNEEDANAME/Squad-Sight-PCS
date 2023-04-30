@@ -24,6 +24,7 @@
     <Folder Include="Src\" />
     <Folder Include="Src\SquadSightPCS\" />
     <Folder Include="Src\SquadSightPCS\Classes\" />
+    <Folder Include="ContentForCook\" />
     <Content Include="Config\XComRustyPCSIcons.ini">
       <SubType>Content</SubType>
     </Content>
@@ -48,5 +49,7 @@
     <Content Include="Src\SquadSightPCS\Classes\X2Ability_SquadSightPCS.uc" />
     <Content Include="Src\SquadSightPCS\Classes\X2Effect_SquadSightPCS_RangeModifiers.uc" />
     <Content Include="Src\SquadSightPCS\Classes\X2Item_SquadSightPCS.uc" />
+    <Content Include="PublishedFileId.ID" />
+    <Content Include="ContentForCook\UILibrary_SquadSightPCS.upk" />
   </ItemGroup>
 </Project>
