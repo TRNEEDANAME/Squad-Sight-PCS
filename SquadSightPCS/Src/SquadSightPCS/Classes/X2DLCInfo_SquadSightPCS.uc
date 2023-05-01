@@ -1,9 +1,22 @@
+// ===============================================================================================================
+//	X2DLCInfo_SquadSightPCS.uc BY TRNEEDANAME
+//
+//	CREATED ON 29/05/2023
+//
+// ===============================================================================================================
+
 class X2DLCInfo_SquadSightPCS extends X2DownloadableContentInfo;
 
 var config array<LootTable> LootTables, LootEntry;
 
-static event OnLoadedSavedGame(){}
-static event InstallNewCampaign(XComGameState StartState){}
+static event OnLoadedSavedGame()
+{
+
+}
+static event InstallNewCampaign(XComGameState StartState)
+{
+
+}
 
 static event OnPostTemplatesCreated()
 {
