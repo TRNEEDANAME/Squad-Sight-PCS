@@ -1,14 +1,14 @@
 [CommonPCS_SquadSight X2EquipmentTemplate]
 FriendlyName="PCS: Basic Squad Sight improvment"
 FriendlyNamePlural="PCS: Basic Squad Sight improvment"
-BriefSummary="This PCS improves the unit's squad sight capabilities, but it will strain them by reducing their mobility by <font color='#3ABD23'>-<Ability:TR_PCS_BSC_MOBILITY_DEBUFF/></font>.\n\n This PCS will reduce the penalty of Squad Sight by <font color='#3ABD23'><Ability:TR_PCS_BSC_SQUADSIGHT_BUFF/>%</font> ." 
+BriefSummary="This PCS decrease the squad sight peanlty by <font color='#3ABD23'><Ability:TR_PCS_BSC_SQUADSIGHT_BUFF/>%</font>, but it will strain them, reducing their mobility by <font color='#3ABD23'>-<Ability:TR_PCS_BSC_MOBILITY_DEBUFF/></font>." 
 
 [RarePCS_SquadSight X2EquipmentTemplate]
 FriendlyName="PCS: Advanced Squad Sight improvment"
 FriendlyNamePlural="PCS: Advanced Squad Sight improvment"
-BriefSummary="This PCS improves the unit's squad sight capabilities, but it will strain them by reducing their mobility by <font color='#3ABD23'>-<Ability:TR_PCS_ADV_MOBILITY_DEBUFF/></font>.\n\n This PCS will reduce the penalty of Squad Sight by <font color='#3ABD23'><Ability:TR_PCS_ADV_SQUADSIGHT_BUFF/>%</font> ." 
+BriefSummary="This PCS decrease the squad sight peanlty by <font color='#3ABD23'><Ability:TR_PCS_ADV_SQUADSIGHT_BUFF/>%</font>, but it will strain them, reducing their mobility by <font color='#3ABD23'>-<Ability:TR_PCS_ADV_MOBILITY_DEBUFF/></font>." 
 
 [EpicPCS_SquadSight X2EquipmentTemplate]
 FriendlyName="PCS: Superior Squad Sight improvment"
 FriendlyNamePlural="PCS: Superior Squad Sight improvment"
-BriefSummary="This PCS improves the unit's squad sight capabilities, but it will strain them by reducing their mobility by <font color='#3ABD23'>-<Ability:TR_PCS_SUP_MOBILITY_DEBUFF/></font>.\n\nA This PCS will reduce the penalty of Squad Sight by <font color='#3ABD23'><Ability:TR_PCS_SUP_SQUADSIGHT_BUFF/>%</font>." 
+BriefSummary="This PCS decrease the squad sight peanlty by <font color='#3ABD23'><Ability:TR_PCS_SUP_SQUADSIGHT_BUFF/>%</font>, but it will strain them, reducing their mobility by <font color='#3ABD23'>-<Ability:TR_PCS_SUP_MOBILITY_DEBUFF/></font>.\ 
