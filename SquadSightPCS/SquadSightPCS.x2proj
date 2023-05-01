@@ -19,16 +19,12 @@
     <Folder Include="Config\" />
     <Folder Include="Config\Base\" />
     <Folder Include="Localization\" />
-    <Folder Include="Content" />
     <Folder Include="ContentForCook" />
     <Folder Include="Src\" />
     <Folder Include="Src\SquadSightPCS\" />
     <Folder Include="Src\SquadSightPCS\Classes\" />
     <Folder Include="ContentForCook\" />
     <Content Include="Config\XComRustyPCSIcons.ini">
-      <SubType>Content</SubType>
-    </Content>
-    <Content Include="Content\UILibrary_SquadSightPCS.upk">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModPreview.jpg" />
