@@ -43,9 +43,11 @@ static function X2AbilityTemplate SquadSight_Buff_Bsc()
 	local X2Effect_SquadSightPCS_RangeModifiers			HitModEffect;
 	local X2Effect_Persistent							PersistentEffect;
 	local X2Condition_PlayerTurns						TurnsCondition;
+	local XComGameState_Unit							Unit;
 
 
 	Template = CreatePassiveAbility('SquadSight_Buff_Bsc', "img:///UILibrary_PerkIcons.UIPerk_long_watch",, false);
+
 
 
 	// This effect handles the reduction of aim penalties due to range tables/squadsight
@@ -69,9 +71,12 @@ static function X2AbilityTemplate SquadSight_Buff_Bsc()
 	TurnsCondition.NumTurnsCheck.Value = 1;
 	Template.AddShooterEffect(PersistentEffect);
 
-	if (default.DoesSquadSightPCS_Bsc_GrantSquadSight == true && !Unit.HasAbilityFromAnySource('Squadsight'))
+	if (default.DoesSquadSightPCS_Bsc_GrantSquadSight == true)
 	{
-		Template.AdditionalAbilities.AddItem('Squadsight');
+		if (!Unit.HasAbilityFromAnySource('Squadsight'))
+		{
+			Template.AdditionalAbilities.AddItem('Squadsight');
+		}
 	}
 
 	return Template;
@@ -110,11 +115,10 @@ static function X2AbilityTemplate SquadSight_Buff_Adv()
 	local X2Effect_SquadSightPCS_RangeModifiers			HitModEffect;
 	local X2Effect_Persistent							PersistentEffect;
 	local X2Condition_PlayerTurns						TurnsCondition;
-
-
+	local XComGameState_Unit							Unit;
+	
 	Template = CreatePassiveAbility('SquadSight_Buff_Adv', "img:///UILibrary_PerkIcons.UIPerk_long_watch",, false);
-
-
+	
 	// This effect handles the reduction of aim penalties due to range tables/squadsight
 	HitModEffect = new class'X2Effect_SquadSightPCS_RangeModifiers';
 	HitModEffect.BuildPersistentEffect(1, true, false, false);
@@ -135,13 +139,15 @@ static function X2AbilityTemplate SquadSight_Buff_Adv()
 	TurnsCondition.NumTurnsCheck.CheckType = eCheck_GreaterThan;
 	TurnsCondition.NumTurnsCheck.Value = 1;
 	
-	if (default.DoesSquadSightPCS_Adv_GrantSquadSight == true && !Unit.HasAbilityFromAnySource('Squadsight'))
+	if (default.DoesSquadSightPCS_Adv_GrantSquadSight == true)
 	{
-		Template.AdditionalAbilities.AddItem('Squadsight');
+		if (!Unit.HasAbilityFromAnySource('Squadsight'))
+		{
+			Template.AdditionalAbilities.AddItem('Squadsight');
+		}
 	}
 
 	Template.AddShooterEffect(PersistentEffect);
-
 
 	return Template;
 }
@@ -170,19 +176,18 @@ static function X2AbilityTemplate SquadSight_Nerf_Adv()
 	return Template;
 }
 
-    static function X2AbilityTemplate SquadSight_Buff_Sup()
+static function X2AbilityTemplate SquadSight_Buff_Sup()
 {
 
 	local X2AbilityTemplate								Template;
 	local X2Effect_SquadSightPCS_RangeModifiers			HitModEffect;
 	local X2Effect_Persistent							PersistentEffect;
-	
 	local X2Condition_PlayerTurns						TurnsCondition;
+	local XComGameState_Unit							Unit;
 
-
+	
 	Template = CreatePassiveAbility('SquadSight_Buff_Sup', "img:///UILibrary_PerkIcons.UIPerk_long_watch",, false);
-
-
+	
 	// This effect handles the reduction of aim penalties due to range tables/squadsight
 	HitModEffect = new class'X2Effect_SquadSightPCS_RangeModifiers';
 	HitModEffect.BuildPersistentEffect(1, true, false, false);
@@ -204,14 +209,16 @@ static function X2AbilityTemplate SquadSight_Nerf_Adv()
 	TurnsCondition = new class'X2Condition_PlayerTurns';
 	TurnsCondition.NumTurnsCheck.CheckType = eCheck_GreaterThan;
 	TurnsCondition.NumTurnsCheck.Value = 1;
-	
+
+	if (default.DoesSquadSightPCS_Sup_GrantSquadSight == true)
+	{
+		if (!Unit.HasAbilityFromAnySource('Squadsight'))
+		{
+			Template.AdditionalAbilities.AddItem('Squadsight');
+		}
+	}
 
 	Template.AddShooterEffect(PersistentEffect);
-
-	if (default.DoesSquadSightPCS_Sup_GrantSquadSight == true && !Unit.HasAbilityFromAnySource('Squadsight'))
-	{
-		Template.AdditionalAbilities.AddItem('Squadsight');
-	}
 
 	return Template;
 }
