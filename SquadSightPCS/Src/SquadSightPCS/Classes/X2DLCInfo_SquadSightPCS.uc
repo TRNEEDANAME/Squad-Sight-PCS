@@ -30,21 +30,21 @@ static function AddLootTables()
 	}
 }
 
-	static function bool AbilityTagExpandHandler(string InString, out string OutString)
+static function bool AbilityTagExpandHandler(string InString, out string OutString)
 {
-	local name Type;
+    local name TagText;
 
-	Type = name(InString);
-	switch(Type)
+    TagText = name(InString);
+	switch(TagText)
 	{
-		case 'TR_PCS_BSC_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_RangePenalityNegated));	return true; break;
-		case 'TR_PCS_ADV_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_RangePenalityNegated));	return true; break;
-		case 'TR_PCS_SUP_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.SupSquadSightPCS_RangePenalityNegated));	return true; break;
+		case 'TR_PCS_BSC_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_RangePenalityNegated));	return true;
+		case 'TR_PCS_ADV_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_RangePenalityNegated));	return true;
+		case 'TR_PCS_SUP_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.SupSquadSightPCS_RangePenalityNegated));	return true;
 
-		case 'TR_PCS_BSC_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_MobilityNegate);			return true; break;
-		case 'TR_PCS_ADV_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_MobilityNegate);			return true; break;
-		case 'TR_PCS_SUP_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.SupSquadSightPCS_MobilityNegate);			return true; break;
+		case 'TR_PCS_BSC_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_MobilityNegate);			return true;
+		case 'TR_PCS_ADV_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_MobilityNegate);			return true;
+		case 'TR_PCS_SUP_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.SupSquadSightPCS_MobilityNegate);			return true;
 
-		default: return false; break;
+		default: 
 	}
 }
