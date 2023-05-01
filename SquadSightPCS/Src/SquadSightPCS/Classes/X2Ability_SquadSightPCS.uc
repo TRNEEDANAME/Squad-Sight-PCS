@@ -16,6 +16,8 @@ var config int				AdvSquadSightPCS_MobilityNegate;
 var config float			SupSquadSightPCS_RangePenalityNegated;
 var config int				SupSquadSightPCS_MobilityNegate;
 
+var config bool DoesSquadSightPCS_Bsc_GrantSquadSight, DoesSquadSightPCS_Adv_GrantSquadSight, DoesSquadSightPCS_Sup_GrantSquadSight;
+
 
 static function array<X2DataTemplate> CreateTemplates()
 {
@@ -67,6 +69,10 @@ static function X2AbilityTemplate SquadSight_Buff_Bsc()
 	TurnsCondition.NumTurnsCheck.Value = 1;
 	Template.AddShooterEffect(PersistentEffect);
 
+	if (default.DoesSquadSightPCS_Bsc_GrantSquadSight == true && !Unit.HasAbilityFromAnySource('Squadsight'))
+	{
+		Template.AdditionalAbilities.AddItem('Squadsight');
+	}
 
 	return Template;
 }
@@ -129,6 +135,10 @@ static function X2AbilityTemplate SquadSight_Buff_Adv()
 	TurnsCondition.NumTurnsCheck.CheckType = eCheck_GreaterThan;
 	TurnsCondition.NumTurnsCheck.Value = 1;
 	
+	if (default.DoesSquadSightPCS_Adv_GrantSquadSight == true && !Unit.HasAbilityFromAnySource('Squadsight'))
+	{
+		Template.AdditionalAbilities.AddItem('Squadsight');
+	}
 
 	Template.AddShooterEffect(PersistentEffect);
 
@@ -198,6 +208,10 @@ static function X2AbilityTemplate SquadSight_Nerf_Adv()
 
 	Template.AddShooterEffect(PersistentEffect);
 
+	if (default.DoesSquadSightPCS_Sup_GrantSquadSight == true && !Unit.HasAbilityFromAnySource('Squadsight'))
+	{
+		Template.AdditionalAbilities.AddItem('Squadsight');
+	}
 
 	return Template;
 }
