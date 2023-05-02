@@ -27,4 +27,4 @@ It's easier for me, but you can change the config without compiling the mod agai
 **YES**, you can, you can open issues, pull request, discussions...
 
 ### Can I fork it ?
-It's just config, but sure, just credit me.
+As per the MIT Licence, you can. Just credit the original author (me) and Endlesspie49 if you keep the UPK file and / or the mod preview image.
