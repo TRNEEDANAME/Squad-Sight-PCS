@@ -10,7 +10,6 @@ This will be the most up to date project folder from the mod, even before it's o
 - The Modbuddy SDK (Search in the steam's tool sections)
 - Follow the wondeful [guide from the Xcom 2 modding subreddit](https://www.reddit.com/r/xcom2mods/wiki/firsttime#wiki_how_to_install_and_set_up_xcom_2_wotc_sdk)
 - Start the SDK, go in file then "open mod project" (you will need to extract the project's folder).
-- Then do your changes (DO NOT CHANGES the `XcomEditor.ini`, `XcomEngine.ini` and `XcomGame.ini` or the mod will throw in an error).
 
 ### Mods used by this mod
 
