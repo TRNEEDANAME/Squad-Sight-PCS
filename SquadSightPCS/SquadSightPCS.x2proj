@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Guid>e60609ac-7de0-4642-b973-84263fdee6e7</Guid>
     <Name>SquadSightPCS</Name>
-    <Description>Description of My XCOM 2 Mod.</Description>
+    <Description>This mod add 3 PCS that reduce the Squad Sight penalty. These PCS can also grant squad sightwwwww</Description>
     <SteamPublishID>0</SteamPublishID>
     <AssemblyName>SquadSightPCS</AssemblyName>
     <RootNamespace>SquadSightPCS</RootNamespace>

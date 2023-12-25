@@ -50,9 +50,9 @@ static function bool AbilityTagExpandHandler(string InString, out string OutStri
     TagText = name(InString);
 	switch(TagText)
 	{
-		case 'TR_PCS_BSC_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_RangePenalityNegated));	return true;
-		case 'TR_PCS_ADV_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_RangePenalityNegated));	return true;
-		case 'TR_PCS_SUP_SQUADSIGHT_BUFF':	OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.SupSquadSightPCS_RangePenalityNegated));	return true;
+		case 'TR_PCS_BSC_SQUADSIGHT_BUFF':		OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_RangePenalityNegated));	return true;
+		case 'TR_PCS_ADV_SQUADSIGHT_BUFF':		OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_RangePenalityNegated));	return true;
+		case 'TR_PCS_SUP_SQUADSIGHT_BUFF':		OutString = string(int(100 * class'X2Ability_SquadSightPCS'.default.SupSquadSightPCS_RangePenalityNegated));	return true;
 
 		case 'TR_PCS_BSC_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.BscSquadSightPCS_MobilityNegate);			return true;
 		case 'TR_PCS_ADV_MOBILITY_DEBUFF':		OutString = string(class'X2Ability_SquadSightPCS'.default.AdvSquadSightPCS_MobilityNegate);			return true;
