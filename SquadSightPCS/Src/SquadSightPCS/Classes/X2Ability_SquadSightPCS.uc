@@ -91,7 +91,7 @@ static function X2AbilityTemplate SquadSight_Buff_Bsc()
 	// Create a persistent stat change effect that adds [default: -1] mobility
 	Effect = new class 'X2Effect_PersistentStatChange';
 	Effect.BuildPersistentEffect(1, true, false, false);
-	Effect.AddPersistentStatChange(eStat_Mobility, default.BscSquadSightPCS_MobilityNegate);
+	Effect.AddPersistentStatChange(eStat_Mobility, -default.BscSquadSightPCS_MobilityNegate);
 	Template.AddTargetEffect(Effect);
 
 
@@ -156,7 +156,7 @@ static function X2AbilityTemplate SquadSight_Nerf_Adv()
 	// Create a persistent stat change effect that adds [default: -1] mobility
 	Effect = new class 'X2Effect_PersistentStatChange';
 	Effect.BuildPersistentEffect(1, true, false, false);
-	Effect.AddPersistentStatChange(eStat_Mobility, default.AdvSquadSightPCS_MobilityNegate);
+	Effect.AddPersistentStatChange(eStat_Mobility, -default.AdvSquadSightPCS_MobilityNegate);
 	Template.AddTargetEffect(Effect);
 
 
@@ -222,7 +222,7 @@ static function X2AbilityTemplate SquadSight_Buff_Sup()
 	// Create a persistent stat change effect that adds [default: -1] mobility
 	Effect = new class 'X2Effect_PersistentStatChange';
 	Effect.BuildPersistentEffect(1, true, false, false);
-	Effect.AddPersistentStatChange(eStat_Mobility, default.SupSquadSightPCS_MobilityNegate);
+	Effect.AddPersistentStatChange(eStat_Mobility, -default.SupSquadSightPCS_MobilityNegate);
 	Template.AddTargetEffect(Effect);
 
 
